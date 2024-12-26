@@ -115,6 +115,8 @@ int main() {
     return 0;
 }
 ```
+这里的代码是 AI 帮我生成的，我试着自己写的，但是我没有注意到 ` int j = max(0, k - 1);  // j 的初始位置可能是 k - 1 ` 这一行，所以**越界**出错了。
+
 然后就是题解中的方法，a[i] 都是**从小到大**遍历的。
 ```cpp
 #include <bits/stdc++.h>
@@ -155,3 +157,6 @@ int main() {
     return 0;
 }
 ```
+从大到小优化的代码是 AI 帮我生成的，其中 main 函数中用到了 ` ios_base::sync_with_stdio(false);  // 提升输入输出效率 cin.tie(nullptr); ` 这两段代码，这是用来提升输入输出效率的。
+
+![image](https://github.com/user-attachments/assets/2554b85f-2f8a-4950-a9a8-1e038dd290a7)
